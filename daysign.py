@@ -171,10 +171,10 @@ def main():
     raw_html = None
     cookies = {}
 
-    if os.getenv('FETCH_98TANG'):
-        cookies = retrieve_cookies_from_fetch('FETCH_98TANG')
-    elif os.getenv('CURL_98TANG'):
-        cookies = retrieve_cookies_from_curl('CURL_98TANG')
+    if os.getenv('FETCH_98TANG_1'):
+        cookies = retrieve_cookies_from_fetch('FETCH_98TANG_1')
+    elif os.getenv('CURL_98TANG_1'):
+        cookies = retrieve_cookies_from_curl('CURL_98TANG_1')
 
     try:
         raw_html = daysign(cookies=cookies)
